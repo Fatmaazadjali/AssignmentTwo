@@ -1,20 +1,16 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace AssignmentTwo
 {
 	 class Program
 	{
 
-		//static void Data(string name,  string price, string quantity)
-		//{
-
-		//	if (name == "laptop")
-		//	{
-
-		//	}
-		//}
+		
 		static void Main()
 		{
+
 			Console.WriteLine("Welcome to the Inventory Management System!");
 			Console.WriteLine("Please enter your username:");
 			Console.ReadLine();
@@ -45,28 +41,47 @@ namespace AssignmentTwo
 			//	Console.WriteLine(option);
 			//}
 
-			Console.WriteLine($"{options[0]}" + $"\n{options[1]}" + $"\n{options[2]}" + $"\n{options[3]}" + $"\n {options[4]}"+ $"\n {options[5]}"+ $"\n {options[6]}");
+			Console.WriteLine($"1.{options[0]}" + $"\n{options[1]}" + $"\n{options[2]}" + $"\n{options[3]}" + $"\n {options[4]}"+ $"\n {options[5]}"+ $"\n {options[6]}");
 
 			Console.ReadLine();
+			string[] productInfo = new string[3];
+			Console.WriteLine("Enter product name ");
 
-			String UserChoice = options[0];
-			if (UserChoice == options[0])
+			productInfo[0] = Console.ReadLine();
+			Console.WriteLine("Enter product price:");
+			productInfo[1] = Console.ReadLine();
+			Console.WriteLine("Enter initial quantity:");
+			productInfo[2] = Console.ReadLine();
+			Console.WriteLine("Product added successfully!");
+            Console.WriteLine("Select an operation" );
+			Console.ReadLine();
+
+			string UserCoise= options[3];
+			if ( UserCoise == options[3])
 			{
-                Console.WriteLine("Enter the product name:");
-				Console.ReadLine();
-                Console.WriteLine("Enter product price:");
-				Console.ReadLine();
-                Console.WriteLine("Enter initial quantity:");
-				Console.ReadLine();
-                Console.WriteLine("Product added successfully!");
+                Console.WriteLine("Enter product name:");
+				productInfo[0] = Console.ReadLine();
+                Console.WriteLine("Enter quantity sold:");
+				productInfo[1] = Console.ReadLine();
+                Console.WriteLine("Sale recorded successfully!");
             }
+            Console.WriteLine( );
+
+            //int price = Convert.ToInt32(Console.ReadLine());
+
+            //	int quantity = Convert.ToInt32(Console.ReadLine());
+
+
+        }
+
 			
+		
+	
 
 
 
-
-
-
+		
 		}
 	}
-}
+
+	
