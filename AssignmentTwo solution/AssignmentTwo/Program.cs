@@ -65,14 +65,24 @@ namespace AssignmentTwo
 				productInfo[1] = Console.ReadLine();
                 Console.WriteLine("Sale recorded successfully!");
             }
-            Console.WriteLine( );
+            Console.WriteLine("Select an operation");
+            Console.ReadLine();
+			string userchice = options[2];
+			if (userchice == options[2])
+			{
+				Console.WriteLine($" Product List:{productInfo} ");
 
-            //int price = Convert.ToInt32(Console.ReadLine());
-
-            //	int quantity = Convert.ToInt32(Console.ReadLine());
+			}
 
 
-        }
+
+
+			//int price = Convert.ToInt32(Console.ReadLine());
+
+			//	int quantity = Convert.ToInt32(Console.ReadLine());
+
+
+		}
 
 			
 		
